@@ -67,6 +67,8 @@ if command -v rustc > /dev/null; then
     echo "Rust já está instalado."
 else
     echo "Instalando Rust..."
+    echo apt install rustc -y
+    echo apt install cargo -y
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y > /dev/null 2>&1 &
     show_loading $! "Instalando Rust"
     
