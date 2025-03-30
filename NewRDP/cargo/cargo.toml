@@ -1,4 +1,0 @@
-[dependencies]
-scrap = "0.5"
-winit = "0.26"
-pixels = "0.9"
