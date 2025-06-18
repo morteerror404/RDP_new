@@ -2,6 +2,7 @@
 name = "client"
 version = "0.1.0"
 edition = "2021"
+mac_address2 = "0.2"
 
 [dependencies]
 winit = "0.28"  # Para criar janelas

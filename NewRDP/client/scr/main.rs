@@ -5,11 +5,12 @@ use tokio::net::TcpStream;
 use tokio::io::AsyncReadExt;
 
 #[tokio::main]
+
 async fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let mut stream = TcpStream::connect("127.0.0.1:5000").await?;
-    let event_loop = EventLoop::new();
-    let window = WindowBuilder::new()
-        .with_title("Streaming de Tela Rust")
+    let mut stream = TcpStream::connect("127.0.0.1:5000").await?; // Solicita conexao no cliente
+    let event_loop = EventLoop::new(); 
+    let window = WindowBuilder::new(); // cria a tela 
+        .with_title("Streaming de Tela Rust") // nomeia Tela
         .build(&event_loop)?;
 
     let window_size = window.inner_size();

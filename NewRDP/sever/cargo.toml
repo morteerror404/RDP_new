@@ -2,6 +2,7 @@
 name = "server"
 version = "0.1.0"
 edition = "2021"
+mac_address2 = "0.2"
 
 [dependencies]
 scrap = "0.5"   # Para captura de tela
